@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imageViewWord"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/blue"
+        android:src="@drawable/addphoto" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Turkish"
+        android:ems="10"
+        android:id="@+id/trEdit" />
+
+    <EditText
+        android:id="@+id/enEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="English"
+        android:layout_above="@+id/trEdit" />
+
+    <Button
+        android:text="Update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUpdate"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:background="@drawable/bgbtn"
+        android:textColor="#343"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_below="@+id/trEdit" />
+
+
+</LinearLayout>

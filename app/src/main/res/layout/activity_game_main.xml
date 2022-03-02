@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bigapp"
+    android:padding="16dp"
+    tools:context=".Game.GameMainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Word Wars"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:id="@+id/flags"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/gamebig"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/btnGroup2"
+        android:paddingTop="300dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Spinner
+            android:id="@+id/spinner_type"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/button_start_game"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/bgbtn"
+            android:textColor="#343"
+            android:text="START GAME"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_game_highscore"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/bgbtn"
+            android:text="GAME HIGH SCORE: 0"
+            android:textColor="#343"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

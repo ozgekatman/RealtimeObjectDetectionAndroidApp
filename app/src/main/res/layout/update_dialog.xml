@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="10dp">
+    <ImageView
+        android:id="@+id/imageViewRecord"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/blue"
+        android:src="@drawable/addphoto"/>
+    <EditText
+        android:id="@+id/engEdit"
+        android:hint="English"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"/>
+    <EditText
+        android:id="@+id/trEdit"
+        android:hint="Turkish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"/>
+    <EditText
+        android:id="@+id/sentenceEdit"
+        android:hint="Make a sentence..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="20"/>
+    <Button
+        android:id="@+id/btnUpdate"
+        android:text="UPDATE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_margin="8dp"
+        android:background="@drawable/bgbtn"
+        android:textColor="#343"
+        android:foreground="?android:attr/selectableItemBackground"
+        />
+
+</LinearLayout>

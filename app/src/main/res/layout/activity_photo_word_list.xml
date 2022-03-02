@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhotoWithWordList.PhotoWordListActivity"
+    android:background="@drawable/bigapp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/imageView"
+            android:background="@color/blue"
+            android:layout_alignParentTop="true"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/addphoto"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"/>
+        <EditText
+            android:id="@+id/engEdit"
+            android:layout_below="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="English"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:background="@color/colorWhite"/>
+        <EditText
+            android:id="@+id/trEdit"
+            android:layout_below="@+id/engEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Turkish"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorWhite"/>
+        <EditText
+            android:id="@+id/sentenceEdit"
+            android:layout_below="@+id/trEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Make a sentence..."
+            android:layout_centerHorizontal="true"
+            android:ems="20"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_below="@+id/sentenceEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_margin="18dp"
+            android:background="@drawable/bgbtn"
+            android:textColor="#343"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_centerHorizontal="true"
+            android:minWidth="160dp"
+            android:text="SAVE"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/btnList"
+            android:layout_below="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_margin="8dp"
+            android:background="@drawable/bgbtn"
+            android:textColor="#343"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_centerHorizontal="true"
+            android:minWidth="160dp"
+            android:text="SHOW WORD LIST"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+</ScrollView>
